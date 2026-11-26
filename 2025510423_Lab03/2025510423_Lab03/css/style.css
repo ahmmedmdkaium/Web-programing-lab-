@@ -1,0 +1,106 @@
+/* Lab 3 stylesheet for Student ID 2025510423 (last digit: 3).
+   Personal values are taken from row 3 of the handout. */
+
+/* Task 2: page text and colours (body; h1, h2) */
+body {
+  font-family: Arial, "Microsoft YaHei", sans-serif;
+  color: #222222;
+  background-color: #fbf7ef;
+  line-height: 1.5;
+  margin: 0;
+}
+
+h1, h2 {
+  color: #7a3e10;
+}
+
+/* Task 3: header and navigation (header; header h1; nav ul; nav a) */
+header {
+  background-color: #7a3e10;
+  color: white;
+  padding: 1rem 1.5rem;
+}
+
+header h1 {
+  color: white;
+  margin-top: 0;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  color: #f6d28b;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Task 4: the main column and its sections (main; section; section h2) */
+main {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 1.5rem;
+  box-sizing: border-box;
+}
+
+section {
+  background-color: white;
+  border: 3px double #9a8c7e;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+section h2 {
+  margin-top: 0;
+}
+
+/* Task 5: YOUR class (name and declaration from your row) */
+.small {
+  font-size: 0.85rem;
+}
+
+/* Task 6: both tables (table; th, td; thead th; caption) */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #8a9ab5;
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+}
+
+thead th {
+  background-color: #f2e2cc;
+}
+
+caption {
+  font-weight: bold;
+  text-align: left;
+  padding-bottom: 0.5rem;
+}
+
+/* Task 7: the footer */
+footer {
+  color: #555555;
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Task 8: the current page and the mouse pointer (nav a.current; nav a:hover) */
+nav a.current {
+  color: white;
+  border-bottom: 3px solid #f6d28b;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}

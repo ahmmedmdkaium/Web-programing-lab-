@@ -1,0 +1,133 @@
+/* ===== 1. Base: box sizing, page colours and font =====
+   box-sizing: border-box makes padding/border count INSIDE the width, so nothing overflows. */
+*, *::before, *::after { box-sizing: border-box; }
+
+:root {
+  --green: #1f6f5c;        /* main brand colour */
+  --green-dark: #154d40;   /* darker green for hover */
+  --paper: #f3f8f6;        /* page background */
+  --card: #ffffff;         /* panel background */
+  --ink: #1d2b27;          /* main text colour */
+  --muted: #4b5f59;        /* softer text colour */
+  --line: #b9cdc6;         /* normal borders */
+  --red: #a11622;          /* error colour (high contrast on white) */
+  --red-bg: #fdecee;       /* very light red background */
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* ===== 2. Page structure: centred column with flexible width ===== */
+.site-header, main, .site-footer {
+  width: 100%;
+  max-width: 760px;   /* never wider than 760px, but shrinks on small screens */
+  margin: 0 auto;     /* auto left/right margins centre it */
+  padding-left: 16px; /* side padding so text never touches the screen edge */
+  padding-right: 16px;
+}
+.site-header { padding-top: 32px; padding-bottom: 8px; }
+main { padding-bottom: 24px; }
+
+/* ===== 3. Text and sections ===== */
+h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 12px; color: var(--green-dark); }
+h2 { font-size: 1.25rem; margin: 0 0 14px; padding-bottom: 8px; border-bottom: 2px solid var(--line); color: var(--green); }
+p, li { overflow-wrap: anywhere; } /* long words/messages wrap instead of pushing the page wider */
+ul { padding-left: 20px; margin: 8px 0 0; }
+
+.panel {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 18px 0;
+}
+
+/* ===== 4. Form controls ===== */
+.field { margin-bottom: 18px; }
+label { display: block; font-weight: 600; margin-bottom: 6px; }
+
+input[type="text"], input[type="email"], input[type="number"], select, textarea {
+  display: block;
+  width: 100%;          /* fits its container exactly */
+  max-width: 100%;
+  padding: 10px 12px;
+  font: inherit;        /* same font as the page */
+  color: var(--ink);
+  background: #fff;
+  border: 2px solid var(--line);
+  border-radius: 6px;
+}
+textarea { resize: vertical; min-height: 110px; }
+
+/* ===== 5. Choice groups (radio / checkbox) ===== */
+fieldset {
+  margin: 0 0 18px;
+  padding: 12px 14px 8px;
+  border: 2px solid var(--line);
+  border-radius: 8px;
+  min-width: 0;         /* stops fieldset from forcing a wide page on phones */
+}
+legend { font-weight: 600; padding: 0 6px; }
+.choice-row { display: flex; flex-wrap: wrap; gap: 8px 12px; }
+.choice, .confirm-row label { display: inline-flex; align-items: center; gap: 8px; font-weight: 400; margin: 0; }
+.choice { padding: 10px 14px; border: 1px solid var(--line); border-radius: 6px; cursor: pointer; background: #fafdfc; }
+.choice input, .confirm-row input { width: 22px; height: 22px; margin: 0; accent-color: var(--green); }
+.confirm-row { display: flex; align-items: center; gap: 10px; padding: 10px 12px; border: 2px solid transparent; border-radius: 6px; }
+
+/* ===== 6. Hints, counter ===== */
+.hint, .counter { margin: 4px 0 0; font-size: 0.9rem; color: var(--muted); }
+.counter { text-align: right; }
+.counter.over { color: var(--red); font-weight: 600; }
+
+/* ===== 7. Buttons and focus ===== */
+button {
+  font: inherit; font-weight: 600; color: #fff; background: var(--green);
+  padding: 12px 22px; border: 2px solid var(--green); border-radius: 6px; cursor: pointer;
+}
+button:hover { background: var(--green-dark); border-color: var(--green-dark); }
+/* Strong visible outline whenever a control is reached with the keyboard */
+button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+  outline: 3px solid #f2a900;
+  outline-offset: 2px;
+}
+input:focus, select:focus, textarea:focus { border-color: var(--green); }
+
+/* ===== 8. Errors: red text + red outline (the text also says what to fix) ===== */
+.error { color: var(--red); font-weight: 600; margin: 6px 0 0; font-size: 0.95rem; }
+.error:empty { display: none; }  /* an empty error paragraph takes no space */
+/* These selectors are more specific than the normal control styles, so the red border wins */
+input.invalid, select.invalid, textarea.invalid, fieldset.invalid { border: 2px solid var(--red); background: var(--red-bg); }
+.confirm-row.invalid { border: 2px solid var(--red); background: var(--red-bg); }
+.form-message { margin: 12px 0 0; font-weight: 600; }
+.form-message.bad { color: var(--red); }
+.form-message.good { color: var(--green-dark); }
+
+/* ===== 9. Success area ===== */
+.result:empty { display: none; }
+.result {
+  white-space: pre-line;        /* respect the line breaks I put in textContent */
+  margin: 0;
+  padding: 14px 16px;
+  background: #e3f5ec;
+  border: 2px solid var(--green);
+  border-left-width: 8px;
+  border-radius: 6px;
+}
+
+/* ===== 10. Footer ===== */
+.site-footer { padding-top: 8px; padding-bottom: 32px; color: var(--muted); font-size: 0.9rem; text-align: center; }
+.site-footer p { margin: 4px 0; }
+
+/* ===== 11. Small screens (about 360px) ===== */
+@media (max-width: 480px) {
+  h1 { font-size: 1.55rem; }
+  .panel { padding: 14px; }
+  .choice-row { flex-direction: column; }  /* stack options so each is easy to tap */
+  .choice { width: 100%; }
+  button { width: 100%; }
+}

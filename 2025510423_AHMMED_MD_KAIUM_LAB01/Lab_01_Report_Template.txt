@@ -1,0 +1,20 @@
+LAB 1 SHORT REPORT
+Name:
+Student ID:
+Class:
+Date:
+
+Objective:
+
+Files produced:
+
+Tests and results:
+Page preview:
+Local image loading:
+External link test or network limitation:
+Save-and-refresh check:
+ZIP extraction check:
+
+Problem and correction (or explanation of a successful check):
+
+Conclusion:

@@ -1,0 +1,178 @@
+/* Shared stylesheet for both pages of the Badminton Club website. */
+
+/* Make width calculations include padding and border, so boxes never grow past their set width. */
+* { box-sizing: border-box; }
+
+/* Style the whole page body. */
+body {
+  margin: 0;                                   /* remove the browser's default outer space */
+  font-family: "Segoe UI", Arial, sans-serif;  /* chosen font stack, with fallbacks */
+  font-size: 1rem;                             /* base text size (usually 16px) */
+  line-height: 1.6;                            /* comfortable space between text lines */
+  color: #1f2d2a;                              /* dark green-grey text, easy to read */
+  background: #e8f3ec;                         /* soft light-green page background (court colour) */
+}
+
+/* Header band at the top of each page. */
+header {
+  background: #0b5d44;                         /* deep court green */
+  color: #ffffff;                              /* white text on dark green */
+  padding: 1.2rem 1rem 0;                      /* space inside: top, sides, no bottom (nav adds it) */
+  border-bottom: 6px solid #f4c430;            /* shuttlecock-yellow stripe under the header */
+}
+
+/* Main club title. */
+h1 {
+  margin: 0 auto 0.8rem;                       /* centre inside the header and add space below */
+  max-width: 860px;                            /* align with the assigned main width */
+  font-size: 2.2rem;                           /* largest heading */
+  letter-spacing: 1px;                         /* slightly spaced letters */
+}
+
+/* Section headings. */
+h2 {
+  margin-top: 0;                               /* no extra gap above the first element of a section */
+  color: #0b5d44;                              /* same green as the header */
+  font-size: 1.5rem;                           /* smaller than h1, larger than body */
+  border-bottom: 2px solid #f4c430;            /* yellow underline to mark the heading */
+  padding-bottom: 0.3rem;                      /* space between text and underline */
+}
+
+/* Navigation list laid out with Flexbox. */
+nav ul {
+  display: flex;                               /* Flexbox: items sit in a row */
+  flex-wrap: wrap;                             /* links may wrap onto a new line on small screens */
+  gap: 0.5rem;                                 /* space between the links */
+  list-style: none;                            /* remove bullet points */
+  margin: 0 auto;                              /* centre the list */
+  max-width: 860px;                            /* same width as the main column */
+  padding: 0 0 0.8rem;                         /* space below the links */
+}
+
+/* Navigation links. */
+nav a {
+  display: block;                              /* whole padded area is clickable */
+  padding: 0.4rem 1rem;                        /* space inside each link */
+  color: #ffffff;                              /* white link text */
+  text-decoration: none;                       /* no underline */
+  border-radius: 20px;                         /* rounded pill shape */
+  border: 2px solid transparent;               /* invisible border so size does not change on hover */
+}
+
+/* Hover and keyboard-focus style. */
+nav a:hover, nav a:focus {
+  background: #178a67;                         /* lighter green on hover */
+  border-color: #ffffff;                       /* white outline on hover */
+}
+
+/* Current-page link (class="current" in the HTML). */
+nav a.current {
+  background: #f4c430;                         /* yellow background marks the current page */
+  color: #0b3d2e;                              /* dark text so it stays readable on yellow */
+  font-weight: bold;                           /* bold text */
+}
+
+/* Main column: centred, never wider than 860px. */
+main {
+  max-width: 860px;                            /* assigned maximum width for digit 3 */
+  margin: 1.5rem auto;                         /* centre horizontally; space above and below */
+  padding: 0 1rem;                             /* keeps space at the sides on narrow screens */
+}
+
+/* Each content section. */
+section {
+  background: #ffffff;                         /* white card */
+  border: 1px solid #b7d4c4;                   /* thin green-grey border */
+  border-left: 6px solid #0b5d44;              /* thick green edge on the left */
+  border-radius: 10px;                         /* rounded corners */
+  padding: 1rem 1.2rem;                        /* space inside the card */
+  margin-bottom: 1.2rem;                       /* space between cards */
+}
+
+/* Paragraph and list text spacing. */
+p, li { margin: 0 0 0.8rem; }
+
+/* Links inside the content. */
+main a {
+  color: #0b5d9a;                              /* blue, clearly a link */
+  text-decoration: underline;                  /* underline for clarity */
+}
+
+/* Image: keep proportions and fit the available width. */
+img {
+  display: block;                              /* removes the small gap under inline images */
+  max-width: 100%;                             /* never wider than its container */
+  height: auto;                                /* keep the original proportions */
+  margin: 1rem auto 0;                         /* centre the image */
+  border: 3px solid #f4c430;                   /* yellow frame */
+  border-radius: 8px;                          /* rounded corners */
+}
+
+/* Highlighted message on Home (class selector). */
+.highlight {
+  background: #fff6cc;                         /* light yellow background */
+  border-left: 5px solid #f4c430;              /* yellow bar on the left */
+  padding: 0.7rem 1rem;                        /* space inside the box */
+  font-size: 1.15rem;                          /* slightly larger text */
+  font-weight: bold;                           /* bold text */
+  color: #5a4500;                              /* dark brown text, readable on yellow */
+  margin: 1rem 0 0;                            /* space above, none below */
+}
+
+/* Wrapper that lets a wide table scroll inside itself instead of the whole page. */
+.table-wrap { overflow-x: auto; }
+
+/* The schedule table. */
+table {
+  width: 100%;                                 /* fill the wrapper */
+  border-collapse: collapse;                   /* merge neighbouring cell borders into single lines */
+}
+
+/* Table caption. */
+caption {
+  caption-side: top;                           /* show above the table */
+  text-align: left;                            /* align with the table's left edge */
+  font-weight: bold;                           /* bold text */
+  color: #0b5d44;                              /* green text */
+  padding-bottom: 0.5rem;                      /* space between caption and table */
+}
+
+/* All header and data cells. */
+th, td {
+  border: 1px solid #9cc5b0;                   /* visible grid lines */
+  padding: 0.6rem 0.8rem;                      /* space inside each cell */
+  text-align: left;                            /* left-align text */
+}
+
+/* Column headings in the thead. */
+thead th {
+  background: #0b5d44;                         /* dark green header cells */
+  color: #ffffff;                              /* white text */
+}
+
+/* Row headings (the activity names). */
+tbody th { background: #e8f3ec; }              /* light green so they stand apart from data cells */
+
+/* Cell that spans two rows. */
+td[rowspan] { vertical-align: middle; }        /* centre the shared place vertically */
+
+/* Footer: identity line. */
+footer {
+  background: #0b3d2e;                         /* very dark green */
+  color: #ffffff;                              /* white text */
+  text-align: center;                          /* centred text */
+  padding: 1rem;                               /* space inside */
+  border-top: 6px solid #f4c430;               /* same yellow stripe as the header */
+}
+
+/* Remove the paragraph margin in the footer. */
+footer p { margin: 0; }
+
+/* Small screens: applies when the viewport is 600px wide or less. */
+@media (max-width: 600px) {
+  h1 { font-size: 1.7rem; }                    /* smaller title on phones */
+  h2 { font-size: 1.25rem; }                   /* smaller section headings */
+  section { padding: 0.8rem; }                 /* less padding gives text more room */
+  .table-wrap { margin: 0 -0.3rem; }           /* let the table use a little more of the card width */
+  th, td { padding: 0.35rem 0.4rem; font-size: 0.8rem; }  /* compact cells so all four columns fit at 360px */
+}

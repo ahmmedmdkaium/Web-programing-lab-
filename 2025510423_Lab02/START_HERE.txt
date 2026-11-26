@@ -1,0 +1,8 @@
+Lab 2 starter
+1. Rename this folder: replace StudentID with your student ID (for example 2025xxxxxx_Lab02).
+2. Find YOUR personal values in the handout: the row for the last digit of your student ID.
+3. Open the folder in VS Code (File > Open Folder).
+4. Complete index.html, then pages/timetable.html, then pages/periods.html.
+5. Keep images/ecut-emblem.jpg where it is.
+6. Save (Ctrl+S) and refresh the browser (Ctrl+R) after every small change.
+7. When everything works, raise your hand and show your three pages to the teacher.

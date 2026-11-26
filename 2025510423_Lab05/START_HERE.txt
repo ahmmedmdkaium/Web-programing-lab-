@@ -1,0 +1,9 @@
+Lab 5 starter
+1. Rename this folder with your student ID.
+2. Find your personal weights using the last digit of your ID.
+3. Open the folder in VS Code. Add your weights, name, ID and script element to index.html.
+4. Complete Tasks 1 to 7 in js/app.js. Keep the browser Console open and refresh after saving.
+5. Choose your own test inputs for every situation in the handout. Write expected results, run the cases and record actual results. There is no fixed test list or count.
+6. Type askAndShow() at the Console input line and press Enter. Try valid input, invalid input and Cancel.
+7. Complete Lab_05_Report.docx with screenshots, chosen tests and complete source as editable text.
+8. Submit StudentID_Name_Lab05_Report.docx to the Web程序设计 Lab 5 assignment on chaoxing.com before its displayed deadline. Reopen the attachment and verify submission.

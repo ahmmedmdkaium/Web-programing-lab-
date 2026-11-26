@@ -1,0 +1,31 @@
+/* Lab 5: this stylesheet is provided; you do not need to change it. */
+body {
+  font-family: Arial, "Microsoft YaHei", sans-serif;
+  color: #222222;
+  background-color: #eef2f8;
+  line-height: 1.5;
+  margin: 0;
+}
+header {
+  background-color: #214784;
+  color: white;
+  padding: 1rem 1.5rem;
+}
+header h1 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+main {
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+}
+code {
+  background-color: white;
+  padding: 0 0.25rem;
+}
+footer {
+  text-align: center;
+  color: #555555;
+  font-size: 0.9rem;
+}

@@ -1,0 +1,144 @@
+<!doctype html>
+<!-- Declares that this file is an HTML5 document. -->
+<html lang="en">
+<!-- Root element; the language is English. -->
+<head>
+  <!-- Page settings (not shown on the page). -->
+  <meta charset="utf-8">
+  <!-- UTF-8 character encoding. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Match the layout width to the device width. -->
+  <title>Activities - Badminton Club</title>
+  <!-- Browser-tab title for this page. -->
+  <link rel="stylesheet" href="../css/style.css">
+  <!-- Shared stylesheet; ../ goes up from pages/ to the project folder. -->
+</head>
+<body>
+  <!-- Visible content starts here. -->
+  <header>
+    <!-- Header region. -->
+    <h1>Badminton Club</h1>
+    <!-- The one h1: the assigned club name. -->
+    <nav>
+      <!-- Navigation region. -->
+      <ul>
+        <!-- List of links. -->
+        <li><a href="../index.html">Home</a></li>
+        <!-- Go up one folder to reach Home. -->
+        <li><a class="current" href="activities.html" aria-current="page">Activities</a></li>
+        <!-- This page: marked with class="current". -->
+      </ul>
+      <!-- End of list. -->
+    </nav>
+    <!-- End of navigation. -->
+  </header>
+  <!-- End of header. -->
+  <main>
+    <!-- The one main region of this page. -->
+    <section id="intro">
+      <!-- Introduction before the table. -->
+      <h2>Our Weekly Activities</h2>
+      <!-- Heading before the table. -->
+      <p>These sessions are for ECUT students of every level, from first-time players to regular team members. Members warm up together, practise serves and doubles, and finish the week with a friendly match. This schedule is a fictional lab example and is not an official timetable.</p>
+      <!-- Three sentences: who it is for, what members do, and the fictional-schedule statement. -->
+    </section>
+    <!-- End of intro. -->
+    <section id="schedule">
+      <!-- Section for the table. -->
+      <div class="table-wrap">
+        <!-- Wrapper so a wide table can scroll inside itself on small screens. -->
+        <table>
+          <!-- The activities table. -->
+          <caption>Weekly Badminton Club schedule (fictional)</caption>
+          <!-- Caption describing the table. -->
+          <thead>
+            <!-- Table head group. -->
+            <tr>
+              <!-- Header row. -->
+              <th scope="col">Activity</th>
+              <!-- Column heading 1. -->
+              <th scope="col">Day</th>
+              <!-- Column heading 2. -->
+              <th scope="col">Time</th>
+              <!-- Column heading 3. -->
+              <th scope="col">Place</th>
+              <!-- Column heading 4. -->
+            </tr>
+            <!-- End header row. -->
+          </thead>
+          <!-- End of thead. -->
+          <tbody>
+            <!-- Table body group with four data rows. -->
+            <tr>
+              <!-- Row 1: Warm-up. -->
+              <th scope="row">Warm-up</th>
+              <!-- Row heading. -->
+              <td>Monday</td>
+              <!-- Day. -->
+              <td>18:00-18:30</td>
+              <!-- Time. -->
+              <td rowspan="2">Sports Hall, Court 1</td>
+              <!-- Place cell spanning two rows (covers Warm-up and Serve practice). -->
+            </tr>
+            <!-- End row 1. -->
+            <tr>
+              <!-- Row 2: Serve practice; no Place cell because of the rowspan above. -->
+              <th scope="row">Serve practice</th>
+              <!-- Row heading. -->
+              <td>Monday</td>
+              <!-- Day. -->
+              <td>18:30-19:30</td>
+              <!-- Time. -->
+            </tr>
+            <!-- End row 2. -->
+            <tr>
+              <!-- Row 3: Doubles practice. -->
+              <th scope="row">Doubles practice</th>
+              <!-- Row heading. -->
+              <td>Wednesday</td>
+              <!-- Day. -->
+              <td>19:00-20:30</td>
+              <!-- Time. -->
+              <td>Sports Hall, Court 2</td>
+              <!-- Place. -->
+            </tr>
+            <!-- End row 3. -->
+            <tr>
+              <!-- Row 4: Friendly match. -->
+              <th scope="row">Friendly match</th>
+              <!-- Row heading. -->
+              <td>Saturday</td>
+              <!-- Day. -->
+              <td>15:00-17:00</td>
+              <!-- Time. -->
+              <td>Gymnasium, Main Court</td>
+              <!-- Place. -->
+            </tr>
+            <!-- End row 4. -->
+          </tbody>
+          <!-- End of tbody. -->
+        </table>
+        <!-- End of table. -->
+      </div>
+      <!-- End of wrapper. -->
+    </section>
+    <!-- End of schedule section. -->
+    <section id="joining">
+      <!-- Joining information after the table. -->
+      <h2>Joining the Club</h2>
+      <!-- Joining heading. -->
+      <p>This site belongs to Badminton Club, the club for student-ID digit 3, and its main column has a maximum width of 860px. To find out why members enjoy these sessions, read the <a href="../index.html#benefits">benefits of joining the club</a> on the Home page.</p>
+      <!-- Required club information plus a meaningful link to the benefits section on Home. -->
+    </section>
+    <!-- End of joining section. -->
+  </main>
+  <!-- End of main. -->
+  <footer>
+    <!-- Footer with identity, same as on Home. -->
+    <p>AHMMED MD KAIUM | Student ID: 2025510423 | Digit: 3</p>
+    <!-- Name, student ID and last digit. -->
+  </footer>
+  <!-- End of footer. -->
+</body>
+<!-- End of body. -->
+</html>

@@ -1,0 +1,86 @@
+<!doctype html>
+<!-- Declares that this file is an HTML5 document. -->
+<html lang="en">
+<!-- Root element; lang="en" tells browsers and screen readers the page is English. -->
+<head>
+  <!-- The head holds settings for the page; nothing here is shown directly. -->
+  <meta charset="utf-8">
+  <!-- Use UTF-8 so every character displays correctly. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Make the page width match the device width, so phones do not zoom out. -->
+  <title>Home - Badminton Club</title>
+  <!-- The text shown on the browser tab; unique and meaningful for this page. -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Load the shared stylesheet; from Home the path is css/style.css. -->
+</head>
+<body>
+  <!-- The body holds everything the visitor sees. -->
+  <header>
+    <!-- Header region: the club title and the navigation. -->
+    <h1>Badminton Club</h1>
+    <!-- The one h1 of the page: the assigned club name. -->
+    <nav>
+      <!-- Navigation region containing the site links. -->
+      <ul>
+        <!-- An unordered list of links (styled as a Flexbox row in CSS). -->
+        <li><a class="current" href="index.html" aria-current="page">Home</a></li>
+        <!-- Link to this page; class="current" marks it as the current page. -->
+        <li><a href="pages/activities.html">Activities</a></li>
+        <!-- Relative link from Home to the Activities page. -->
+      </ul>
+      <!-- End of the navigation list. -->
+    </nav>
+    <!-- End of navigation. -->
+  </header>
+  <!-- End of header. -->
+  <main>
+    <!-- The one main region: the unique content of this page. -->
+    <section id="welcome">
+      <!-- Welcome section. -->
+      <h2>Welcome to the Court</h2>
+      <!-- Section heading (h2 sits under the h1). -->
+      <p>Badminton Club welcomes students who enjoy fast rallies, friendly teamwork and healthy exercise. We train on campus courts, practise serves and footwork, and play relaxed matches every week. Beginners are as welcome as experienced players, because every member learns by playing together and helping each other improve.</p>
+      <!-- Introduction paragraph of 47 words, written in my own words. -->
+      <img src="images/ecut-emblem.jpg" alt="Emblem of ECUT, the university that hosts the Badminton Club" width="301" height="299">
+      <!-- The supplied local image; alt gives meaningful text; width/height reserve space (CSS keeps proportions). -->
+    </section>
+    <!-- End of welcome section. -->
+    <section id="benefits">
+      <!-- Benefits section; id="benefits" is the target of the link on the Activities page. -->
+      <h2>Benefits of Joining</h2>
+      <!-- Section heading. -->
+      <ul>
+        <!-- A list of club-specific benefits. -->
+        <li>Better stamina, speed and hand-eye coordination from regular rallies.</li>
+        <!-- Benefit 1. -->
+        <li>Coaching tips from senior players on grip, serve and footwork.</li>
+        <!-- Benefit 2. -->
+        <li>Shared rackets and shuttlecocks for beginners during training.</li>
+        <!-- Benefit 3. -->
+        <li>New friends from every faculty and a chance to play in friendly matches.</li>
+        <!-- Benefit 4. -->
+      </ul>
+      <!-- End of benefits list. -->
+      <p class="highlight">Come for one rally, stay for the team!</p>
+      <!-- Short highlighted message, styled by the class selector .highlight. -->
+    </section>
+    <!-- End of benefits section. -->
+    <section id="join">
+      <!-- How-to-join section. -->
+      <h2>How to Join</h2>
+      <!-- Section heading. -->
+      <p>Any current ECUT student may join, and no experience is needed. Email the organiser, Li Wei, at badminton.club@example.edu or simply come to our first meeting on Monday at 18:00 in Sports Hall Court 1. Bring sports shoes, a water bottle and a towel. (All meeting details are fictional for this lab.)</p>
+      <!-- Who may join, how to contact the organiser or attend, and what to bring. -->
+    </section>
+    <!-- End of join section. -->
+  </main>
+  <!-- End of main. -->
+  <footer>
+    <!-- Footer region with my identity. -->
+    <p>AHMMED MD KAIUM | Student ID: 2025510423 | Digit: 3</p>
+    <!-- Name, student ID and last digit. -->
+  </footer>
+  <!-- End of footer. -->
+</body>
+<!-- End of body. -->
+</html>

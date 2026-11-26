@@ -1,0 +1,18 @@
+Completed Lab 3 project
+Student ID: 2025510423 (last digit 3)
+
+How to open:
+1. Extract this ZIP file.
+2. Open the folder 2025510423_Lab03 in Visual Studio Code.
+3. Open index.html in a browser.
+4. Test Home, Timetable, and Periods links. The CSS file is css/style.css.
+
+Completed tasks:
+- Linked the external stylesheet to all three pages.
+- Used the row 3 values from the handout.
+- Styled the body, headings, header, horizontal navigation, main column, and sections.
+- Added the required .small class and used it in index.html.
+- Styled both tables and the footer.
+- Marked the current navigation link on each page and added hover styling.
+
+The original starter pages and image have been kept. Review the code and change any sample timetable/personal details if your teacher expects your own Lab 2 content.

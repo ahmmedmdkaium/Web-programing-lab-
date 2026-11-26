@@ -1,0 +1,1 @@
+Read Lab_06_Student_Handout.docx. Use the final digit of your student ID. Rename this folder with your ID. Build your own page, styling and validation. Open index.html locally. Submit the completed Word report on chaoxing.com by the displayed deadline.

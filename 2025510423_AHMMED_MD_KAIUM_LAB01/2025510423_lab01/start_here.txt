@@ -1,0 +1,1 @@
+Open the whole starter folder in your editor. Complete the TODO comments in index.html. Keep images/ecut-emblem.jpg in place. Do not submit this instruction file. The supplied emblem is the official ECUT mark; use it unchanged for this course exercise.
